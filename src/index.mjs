@@ -194,8 +194,4 @@ const nameArr = ["佐藤", "鈴木", "原田"];
 //   typeof num === "number" ? num.toLocaleString() : "数値ではありません";
 // console.log(formattedNum);
 
-const checkSum = (num1, num2) => {
-  return num1 + num2 < 100 ? "100未満です" : "100よりも大きいです";
-};
-
-console.log(checkSum(50, 20));
+//
