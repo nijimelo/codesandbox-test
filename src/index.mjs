@@ -145,4 +145,57 @@ document.getElementById("app").innerHTML = `
 // //代入の場合は、コピーではなく、arr4をただarr8に入れただけ。中身はarr4のままでコピーではない。
 
 // const arr7 = [...arr4, ...arr5];
-// //console.log(arr7);
+// console.log(arr7);
+
+/**
+ * mapやfillterを使った配列の処理
+ */
+
+const nameArr = ["佐藤", "鈴木", "原田"];
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(nameArr[index]);
+// }
+
+// const nameArr2 = nameArr.map((name) => name);
+// //ただnameArrをnameArr2という変数に入れる。（新しい配列を作る）
+// console.log(nameArr2);
+
+// nameArr.map((name) => console.log(name));
+//配列の中身を1個ずつコンソールに表示させる
+
+// const numArr = [0, 1, 2, 3, 4, 5];
+// const numOdd = numArr.filter((num) => {
+//   return num % 2 === 0;
+// });
+// console.log(numOdd);
+
+// const newNameArr = nameArr.map((name) => {
+//   if (name == "佐藤") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// //console.log(newNameArr);
+// newNameArr.map((name) => {
+//   console.log(name);
+// });
+
+/*
+ *三項演算子 */
+
+//ある条件 ? 条件がtrueの場合 : 条件がfalseの場合;
+// const val = 1 != 0 ? "trueです" : "falseです";
+// console.log(val);
+
+// const num = "1300";
+// //console.log(num.toLocaleString());
+// const formattedNum =
+//   typeof num === "number" ? num.toLocaleString() : "数値ではありません";
+// console.log(formattedNum);
+
+const checkSum = (num1, num2) => {
+  return num1 + num2 < 100 ? "100未満です" : "100よりも大きいです";
+};
+
+console.log(checkSum(50, 20));
