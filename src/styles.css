@@ -1,21 +1,58 @@
 body {
   font-family: sans-serif;
 }
+
+body > div {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 200px;
+}
+
+#highlighter {
+  height: 0 !important;
+  min-height: auto !important;
+}
+
 .input-area {
   background-color: #ddd;
+  min-height: auto;
   padding: 1em;
 }
 
 div p {
   font-weight: 500;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  margin-bottom: 0;
 }
 
 ul li {
+  margin-bottom: 1em;
+}
+
+ul li > div {
   display: flex;
+  align-items: center;
 }
 
 ul li button {
   margin-left: 0.5em;
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: #ccc;
+}
+
+ul li button:hover {
+  background-color: #fff;
+  outline: none !important;
+  border-width: 1px;
 }
 
 .input-area button {
