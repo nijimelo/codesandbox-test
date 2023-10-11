@@ -3,15 +3,14 @@
   <head>
     <title>ToDoList</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./styles.css" type="text/css">
   </head>
 
   <body>
-    <div class="input-area"><input type="text"><button>追加する</button></div>
+    <div class="input-area"><input id="input-todo" type="text"><button id="add">追加する</button></div>
     <div class="incomplete-area">
       <p>未完了のToDo</p>
       <ul>
-        <li><div><p>テキストテキストテキスト</p><button>完了</button><button>削除</button></div></li>
+        <li><div><p>テキストテキストテキスト</p><button id="complete">完了</button><button id="delete">削除</button></div></li>
       </ul>
     </div>
     <div class="complete-area">
