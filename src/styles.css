@@ -1,3 +1,31 @@
 body {
   font-family: sans-serif;
 }
+.input-area {
+  background-color: #ddd;
+  padding: 1em;
+}
+
+div p {
+  font-weight: 500;
+}
+
+ul li {
+  display: flex;
+}
+
+ul li button {
+  margin-left: 0.5em;
+}
+
+.input-area button {
+  margin-left: 0.5em;
+}
+.incomplete-area {
+  background-color: #eee;
+  padding: 1em;
+}
+.complete-area {
+  background-color: #cecece;
+  padding: 1em;
+}
