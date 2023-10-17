@@ -74,4 +74,3 @@ const deleteFromIncompleteList = (target) => {
 };
 
 document.getElementById("addBtn").addEventListener("click", () => onClickAdd());
-//よくわかんない
